@@ -10,17 +10,18 @@ npm install --save impress.js-react
 # Example
 ```js
 import React from 'react'
-import Impress, {Step} from 'impress.js-react'
+import Impress, {Step, Slide} from 'impress.js-react'
 import ReactDOM from 'react-dom'
 
 const Presentation = () => (
   <Impress>
-    <Step x={50} y={300} z={35}>
+    <Slide x={50} y={300} z={35}>
       Hello World
-    </Step>
+    </Slide>
     <Step x={50} y={30} z={35}>
       Test
     </Step>
+    <img x={40} rotateX={45} src='./pic.png' />
   </Impress>
 )
 

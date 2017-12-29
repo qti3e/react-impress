@@ -1,6 +1,6 @@
 {
   "name": "impress.js-react",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Create Impress presentation with React and JSX",
   "main": "build/index.js",
   "peerDependencies": {
