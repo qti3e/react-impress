@@ -1,5 +1,5 @@
 {
-  "name": "react-impress",
+  "name": "react-impress.js",
   "version": "0.0.1",
   "description": "Create Impress presentation with React and JSX",
   "main": "build/index.js",
@@ -16,13 +16,14 @@
     "build": "webpack"
   },
   "author": {
-    "name": "Your name",
-    "email": "your email"
+    "name": "Parsa Ghadimi",
+    "email": "qti3eqti3e@gmail.com"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.5.1"
