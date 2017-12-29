@@ -21,13 +21,13 @@ class Step extends Component{
 
   render(){
     let styles = {
-      ...this.props.styles,
+      ...this.props.style,
       position: "absolute",
-      transform: "translate(-50%,-50%)" +
+      transform: "translate(" + (document.dir == 'rtl' ? '' : '-') + "50%,-50%)" +
                  translate(this.step.translate) +
                  rotate(this.step.rotate) +
                  scale(this.step.scale),
-      transformStyle: "preserve-3d"
+      transformStyle: "preserve-3d",
     }
 
     return (
@@ -39,7 +39,7 @@ class Step extends Component{
 }
 
 Step.defaultProps = {
-  styles: {},
+  style: {},
   x: 0,
   y: 0,
   z: 0,

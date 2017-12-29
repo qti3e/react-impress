@@ -28,7 +28,9 @@ ReactDOM.render(<Presentation />, document.getElementById('root'))
 ```
 
 # Todo
-- [ ] Slide component
+- [x] Slide component
+- [ ] Auto circle generator
+- [ ] Overview component
 - [ ] Support background related attributes
 - [ ] Animations
 

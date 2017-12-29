@@ -106,16 +106,16 @@ class Impress extends Component{
     // Compute target state of the canvas based on given step
     let target = {
         rotate: {
-          x: -step.props.rotateX,
-          y: -step.props.rotateY,
-          z: -(step.props.rotateZ || step.props.rotate)
+          x: -toNumber(step.props.rotateX, 0),
+          y: -toNumber(step.props.rotateY, 0),
+          z: -toNumber((step.props.rotateZ || step.props.rotate), 0)
         },
         translate: {
-          x: -step.props.x,
-          y: -step.props.y,
-          z: -step.props.z
+          x: -toNumber(step.props.x, 0),
+          y: -toNumber(step.props.y, 0),
+          z: -toNumber(step.props.z, 0)
         },
-        scale: 1 / step.props.scale
+        scale: 1 / toNumber(step.props.scale, 1)
     }
 
     // Check if the transition is zooming in or not.
