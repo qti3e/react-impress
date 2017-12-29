@@ -4,13 +4,13 @@ Rewrite Impress.js presentation framework for React & JSX
 # Install
 This package is available on NPM:
 ```
-npm install --save react-impress.js
+npm install --save impress.js-react
 ```
 
 # Example
 ```js
 import React from 'react'
-import Impress, {Step} from 'react-impress.js'
+import Impress, {Step} from 'impress.js-react'
 import ReactDOM from 'react-dom'
 
 const Presentation = () => (
